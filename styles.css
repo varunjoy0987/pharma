@@ -93,14 +93,15 @@ nav {
 /* Hero Banner */
 .hero-banner {
     width: 100%;
-    max-height: 500px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .banner-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    max-width: 100%;
+    display: block;
 }
 
 /* Offer Terms */
