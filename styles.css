@@ -485,3 +485,29 @@ nav {
 .add-to-cart:hover:not(.sold-out) {
     background-color: #0056b3;
 }
+
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2rem;
+  }
+  
+  .rating > input {
+    display: none;
+  }
+  
+  .rating > label {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .rating > input:checked ~ label {
+    color: gold;
+  }
+  
+  .rating > input:hover ~ label,
+  .rating > input:hover + label {
+    color: gold;
+  }
+  
