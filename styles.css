@@ -485,29 +485,51 @@ nav {
 .add-to-cart:hover:not(.sold-out) {
     background-color: #0056b3;
 }
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    margin: auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .slider {
+    position: relative;
+  }
+  
+  
+  .active {
+    display: block; /* Show the active slide */
+  }
+  
+  .inactive {
+    display: none; /* Hide inactive slides */
+  }
+   /* Add this CSS to style the slider */
+   .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Full width */
+    height: auto; /* Adjust height as needed */
+}
 
-.rating {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    font-size: 2rem;
-  }
-  
-  .rating > input {
-    display: none;
-  }
-  
-  .rating > label {
-    color: #ccc;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  
-  .rating > input:checked ~ label {
-    color: gold;
-  }
-  
-  .rating > input:hover ~ label,
-  .rating > input:hover + label {
-    color: gold;
-  }
-  
+.slider {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.slider img {
+    width: 80%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.active {
+    display: block; /* Show active image */
+}
+
+.inactive {
+    display: none; /* Hide inactive images */
+}
